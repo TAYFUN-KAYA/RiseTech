@@ -1,3 +1,5 @@
+![alt text](https://www.vectorlogo.zone/logos/reactjs/reactjs-ar21.svg)
+
 * Responsive design 
 * Local Storage
 * Formik
