@@ -6,6 +6,14 @@
 <br/>
 -I used eslint static code analysis technology
 
+![alt text](https://www.vectorlogo.zone/logos/axios/axios-ar21.svg)
+<br/>
+-I contacted the service via axios
+
+![alt text](https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-ar21.svg)
+<br/>
+-I applied styling and responsive design with tailwind
+
 
 # Getting Started with Create React App
 
