@@ -1,3 +1,14 @@
+* Responsive design 
+* Local Storage
+* Formik
+* Yup
+* MUI
+* Styled Component
+* Redux
+* React-Select
+* Context api
+* Nodejs with express for the service
+
 ![alt text](https://www.vectorlogo.zone/logos/nodejs/nodejs-ar21.svg)
 <br/>
 -I wrote the service provider that submits the jobs.
