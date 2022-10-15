@@ -6,7 +6,7 @@ var cors = require("cors");
 
 app.use(cors());
 
-const books = [
+const jobs = [
   {
     id: 1,
     name: "Adaylarla ilgili teknik bir ödev hazırlamam gerekiyor",
@@ -32,7 +32,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/api/jobs", (req, res) => {
-  res.send(books);
+  res.send(jobs);
 });
 
 const port = process.env.PORT || 8080;
