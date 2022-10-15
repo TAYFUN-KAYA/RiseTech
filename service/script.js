@@ -7,13 +7,24 @@ var cors = require("cors");
 app.use(cors());
 
 const books = [
-  { id: 1, name: "cacana", priority: 1, priorityName: "Urgent" },
-  { id: 2, name: "babanaa", priority: 2, priorityName: "Regular" },
-  { id: 3, name: "abanaa", priority: 3, priorityName: "Trivial" },
-  { id: 4, name: "abanaab", priority: 1, priorityName: "Urgent" },
-  { id: 5, name: "abanaac", priority: 2, priorityName: "Regular" },
-  { id: 6, name: "abanaad", priority: 3, priorityName: "Trivial" },
-  { id: 7, name: "abanaae", priority: 1, priorityName: "Urgent" },
+  {
+    id: 1,
+    name: "Adaylarla ilgili teknik bir ödev hazırlamam gerekiyor",
+    priority: 1,
+    priorityName: "Urgent",
+  },
+  {
+    id: 2,
+    name: "Yapılan işlerle ilgili activity kayitlari olusturmam gerekiyor",
+    priority: 2,
+    priorityName: "Regular",
+  },
+  {
+    id: 3,
+    name: "Teknik tasklari planlayacagim",
+    priority: 3,
+    priorityName: "Trivial",
+  },
 ];
 
 app.get("/", (req, res) => {
