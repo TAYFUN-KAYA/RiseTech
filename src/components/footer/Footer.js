@@ -11,6 +11,9 @@ const Footer = () => {
       <text
         className="flex pl-3 text-center items-center justify-center underline"
         style={{ color: "#858b91" }}
+        onClick={() =>
+          window.open("https://github.com/TAYFUN-KAYA/RiseTech", "_blank")
+        }
       >
         repository
       </text>
