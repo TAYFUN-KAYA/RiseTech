@@ -6,17 +6,20 @@ import SelectField from "./selected/CustomSelect";
 import { SET_JOB } from "../store/actions";
 import { connect } from "react-redux";
 import "react-notifications/lib/notifications.css";
+import { NotificationManager } from "react-notifications";
 
 const CreateNewJob = ({ jobs }) => {
   const CreateSchema = Yup.object().shape({
     job_name: Yup.string()
       .min(4, "Too Short Job Name!")
       .max(255, "Too Long Job Name!")
-      //.matches("^[a-zA-Z0-9]+$", "Must Be Alphanumeric Only")
+      .matches(
+        /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/,
+        "alphanumeric characters only"
+      )
       .required(" Job Name required "),
     job_priority: Yup.object().required("Job priority required"),
   });
-  // String regex = "^[a-zA-Z0-9]+$";
 
   const options = [
     { value: 1, label: "Urgent" },
@@ -46,6 +49,7 @@ const CreateNewJob = ({ jobs }) => {
         JSON.stringify([...localstoragesData, newData])
       );
     }
+    NotificationManager.success("Success", "Ekleme Başarılı !");
   };
   return (
     <div className=" flex mb-4">
