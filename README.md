@@ -1,7 +1,10 @@
--I wrote the service provider that submits the jobs.
 ![alt text](https://www.vectorlogo.zone/logos/nodejs/nodejs-ar21.svg)
--I used eslint static code analysis technology
+<br/>
+-I wrote the service provider that submits the jobs.
+<br/>
 ![alt text](https://www.vectorlogo.zone/logos/eslint/eslint-ar21.svg)
+<br/>
+-I used eslint static code analysis technology
 
 
 # Getting Started with Create React App
